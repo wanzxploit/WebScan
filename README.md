@@ -1,6 +1,13 @@
 
 # WebScan
 
+![WebScan Banner](banner.png)
+
+![GitHub stars](https://img.shields.io/github/stars/wanzxploit/WebScan?style=social)
+![Version](https://img.shields.io/badge/version-1.0(Beta)-brightgreen)
+![Python](https://img.shields.io/badge/python-3.7+-blue)
+![Platform](https://img.shields.io/badge/platform-linux%20%7C%20termux-lightgrey)
+
 **WebScan** is a terminal-based tool that scans website URLs to retrieve critical information such as IP addresses, security status, vulnerabilities, and technical data. This tool is designed to assist security administrators and developers in auditing website security effortlessly.
 
 ---
