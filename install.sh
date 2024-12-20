@@ -6,13 +6,6 @@ YELLOW='\033[0;33m'
 CYAN='\033[0;36m'
 NC='\033[0m'
 
-figlet -c "WebScan Installer"
-
-if [ "$EUID" -ne 0 ]; then 
-    echo -e "${RED}✖ Jalankan skrip ini sebagai root!${NC}"
-    exit 1
-fi
-
 if [ -d "$PREFIX" ] && [ "$PREFIX" = "/data/data/com.termux/files/usr" ]; then
     TERMUX=true
     echo -e "${CYAN}• Detected Termux environment.${NC}"
@@ -58,4 +51,4 @@ pip3 install --upgrade pip
 pip3 install rich requests python-whois dnspython pyfiglet
 
 echo -e "${GREEN}✔ Semua dependensi berhasil diinstal!${NC}"
-echo -e "${CYAN}• Anda dapat menjalankan tools dengan perintah:${NC} ${GREEN}python3 webscan.py${NC}"
+echo -e "${CYAN}• Anda dapat menjalankan tools dengan perintah:${NC} ${GREEN}python3 main.py atau make run${NC}"
